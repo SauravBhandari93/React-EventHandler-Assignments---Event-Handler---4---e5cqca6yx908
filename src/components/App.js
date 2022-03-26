@@ -18,8 +18,8 @@ const App = () => {
   const handleDoubleClick = (event) => {
     clearTimeout(timer);
     setPrevent(true);
-
     console.log("I was double clicked");
+
     setTimeout(() => {
       setPrevent(false);
     }, 200);
@@ -28,8 +28,8 @@ const App = () => {
     <div id="main">
       <button
         id="dblclick-btn"
-        onDoubleClick={handleDoubleClick}
         onClick={handlSingleClick}
+        onDoubleClick={handleDoubleClick}
       >
         Double click me
       </button>
